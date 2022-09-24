@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mEDIDAS EM HTML 5</title>
+</head>
+<body>
+    <h1>Imagem Dinamica</h1>
+    <p>Tente abrir este site em diversos 
+        dispositivos diferentes ou siplesmente aumente e 
+        diminua o tamanho do seu computador.</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="imagens/fotom.png" type="image/png">
+            <img src="imagens/fotog.png" alt="imagem flexivel">
+        </picture>
+        <h1>Reproduzindo audio</h1>        <!-- MP3 WAV OGG FORMATOS DE AUDIOS-->
+        <p>Vamos aprender a reproduzir um audio na minha website</p>
+        <!--Outras maneiras de adicionar audio na pagina-->
+        <audio preload="metadata" autoplay controls loop> <!--Loop para musicar repetir ao chegar no fim-->
+            <source src="midia/lennonmusic.mp3" type="audio/mpeg">
+            <source src="midia/lennonmusic.ogg" type="audio/ogg">
+            <source src="midia/cabelinhomusic.wav" type="audio/wav"><!--Evitar arquivos WAV sao muitos grandes-->
+            <p>Infelismente seu navegador não consegue reproduzir audio</p>
+            <a href="midia/cabelinhomusic.mp3">Clique aqui para baixar o audio</a>
+        </audio>
+</body>
+</html>
